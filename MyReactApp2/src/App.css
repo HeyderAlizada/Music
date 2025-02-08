@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.song {
+  border: solid 1px black;
+  width: 300px;
+  height: 550px; /* Fixed height so it doesn't change */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Keeps elements evenly spaced */
+  overflow: hidden; /* Prevents content from pushing the div size */
+}
+
+.song img {
+  width: 100%;
+  height: 300px; /* Consistent height for all images */
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  flex-grow: 1; /* Fills remaining space without pushing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom h1, .bottom p {
+  margin: 5px 0; 
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto; 
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.song .bottom h3{
+  text-align: left;
+  font-size: 25px;
+
+  margin-bottom: -5px;
+}
+
+.song h1 {
+  max-height: 100px;
+  margin-bottom: -25px;
+  font-size: 40px;
+}
+
+audio{
+  width: 100%;
+  margin-top: 10px;
+
+}
+audio::-webkit-media-controls-panel {
+  /* background-color: #ffffff; */
+  color: bla;
+}
+.time{
+  display: flex;
+  justify-content: space-between;
+}
