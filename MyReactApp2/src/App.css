@@ -90,3 +90,8 @@ audio::-webkit-media-controls-panel {
   display: flex;
   justify-content: space-between;
 }
+
+.b1{
+  display: flex;
+  justify-content: space-between;
+}
