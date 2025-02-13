@@ -8,7 +8,7 @@
 .song {
   border: solid 1px black;
   width: 300px;
-  height: 550px; /* Fixed height so it doesn't change */
+  height: 550px; 
   padding: 20px;
   border-radius: 20px;
   background-color: white;
@@ -17,13 +17,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Keeps elements evenly spaced */
-  overflow: hidden; /* Prevents content from pushing the div size */
+  justify-content: space-between; 
+  overflow: hidden;
 }
 
 .song img {
   width: 100%;
-  height: 300px; /* Consistent height for all images */
+  height: 300px; 
   object-fit: cover;
   border: 3px solid black;
   border-radius: 20px;
@@ -32,7 +32,7 @@
 .bottom {
   width: 100%;
   text-align: center;
-  flex-grow: 1; /* Fills remaining space without pushing */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,4 +94,27 @@ audio::-webkit-media-controls-panel {
 .b1{
   display: flex;
   justify-content: space-between;
+}
+.progress-bar{
+  width: 100%;
+  height: 7px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0 ;
+  background-color: #ccc;
+  transition: 0.1s;
+
+}
+
+.progress{
+  height: 100%;
+  background-color: rgb(36, 147, 36);
+  transition: width 0.1s linear;
+}
+.b1 .repeat{ 
+  cursor:pointer;
+}
+
+.progress-bar:hover{
+  cursor: pointer;
 }
