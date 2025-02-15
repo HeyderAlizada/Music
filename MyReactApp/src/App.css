@@ -44,3 +44,20 @@
 h1{
   color: white;
 }
+input{
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+  font-size: 30px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.to-do{
+  width: 90% !important;
+  margin: auto;
+  display: flex;
+}
+.to-do button{
+  background-color: rgb(225, 71, 71) !important;
+}
