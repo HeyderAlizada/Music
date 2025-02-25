@@ -1,4 +1,4 @@
-import { useState, useEffect, createElement, useRef } from 'react';
+import { useState } from 'react';
 import './App.css'
 
 function App() {
@@ -15,7 +15,9 @@ function App() {
       settext("");
     }
   }
-
+  const deletes = (index) => {
+    settasks(tasks.filter((_,i) => i !== index));
+  }
   return (
     <>
       <div className='to-do'>
@@ -25,7 +27,7 @@ function App() {
       <div className="listof">
         <ul>
           {tasks.map((task, index) => (
-            <div className="lists"><li key={index}>{index+1}) {task}</li><button>Delete</button></div>
+            <div className="lists"key={index}><li >{index + 1}) {task}</li><button onClick={() => deletes(index)}>Delete</button></div>
           ))}
         </ul>
       </div>
