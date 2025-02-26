@@ -16,22 +16,20 @@ function App() {
     }
   }
   const deletes = (index) => {
-    settasks(tasks.filter((_,i) => i !== index));
+    settasks(tasks.filter((_, i) => i !== index));
   }
   return (
-    <>
+    <div className='to-do-container'>
       <div className='to-do'>
         <input type="text" placeholder='Enter a task' value={text} onChange={handleChange} />
         <button onClick={addTask}>ADD</button>
       </div>
       <div className="listof">
-        <ul>
           {tasks.map((task, index) => (
-            <div className="lists"key={index}><li >{index + 1}) {task}</li><button onClick={() => deletes(index)}>Delete</button></div>
+            <div className="lists" key={index}><span>{index}  </span> <h2>{task}</h2><button onClick={() => deletes(index)}>Delete</button></div>
           ))}
-        </ul>
-      </div>
-    </>
+        </div>
+    </div>
   )
 }
 export default App
